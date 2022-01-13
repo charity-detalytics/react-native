@@ -9676,7 +9676,7 @@ function ChildReconciler(shouldTrackSideEffects) {
         case ForwardRef:
         case SimpleMemoComponent: {
           {
-            throw Error(
+            console.warn(
               (getComponentNameFromFiber(returnFiber) || "Component") +
                 "(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null."
             );

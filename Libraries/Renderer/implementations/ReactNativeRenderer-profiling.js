@@ -3284,7 +3284,7 @@ function ChildReconciler(shouldTrackSideEffects) {
         case 0:
         case 11:
         case 15:
-          throw Error(
+          console.warn(
             (getComponentNameFromFiber(returnFiber) || "Component") +
               "(...): Nothing was returned from render. This usually means a return statement is missing. Or, to render nothing, return null."
           );
